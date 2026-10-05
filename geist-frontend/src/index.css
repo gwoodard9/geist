@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+
+    --animate-float: float 2.4s ease-in-out infinite;
+    --animate-float-shadow: float-shadow 2.4s ease-in-out infinite;
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0) rotate(-4deg); }
+        50% { transform: translateY(-14px) rotate(4deg); }
+    }
+
+    @keyframes float-shadow {
+        0%, 100% { transform: scaleX(1); opacity: 1; }
+        50% { transform: scaleX(0.7); opacity: 0.5; }
+    }
+}
